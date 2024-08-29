@@ -14,9 +14,15 @@ const objectOfAttrs = {
 </script>
 
 <template>
-  <h1>Syntax</h1>
+  <h1 class="center-text">Syntax</h1>
   <p>Message: {{ message }}</p>
   <span v-html="rawHtml"></span>
   <button :id="buttonId" :class="buttonClass" :disabled="isButtonDisabled">Click here</button>
   <button v-bind="objectOfAttrs">Click now</button>
 </template>
+<style>
+.center-text {
+  text-align: center;
+  color: aquamarine;
+}
+</style>
